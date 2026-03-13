@@ -1,18 +1,30 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Binary wheels (never commit these)
+*.whl
 
-# Other files and folders
-.settings/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Large model files
+*.dat
+*.bz2
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# OS files
+.DS_Store
+Thumbs.db
+
+# OpenCV temp files
+*.avi
+*.mp4
+```
+
+---
+
+## How to Edit on GitHub
+
+Go to your repo → click `.gitignore` → click ✏️ edit icon → add the lines → commit with message:
+```
+chore: update gitignore
